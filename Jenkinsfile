@@ -2,6 +2,11 @@ pipeline {
 
     agent any
 
+    environment {
+        JAVA_HOME = 'C:\\Users\\d.mane\\.jdks\\ms-21.0.10'
+        PATH = "${JAVA_HOME}\\bin;${PATH}"
+    }
+
     stages {
 
         stage('Build') {
